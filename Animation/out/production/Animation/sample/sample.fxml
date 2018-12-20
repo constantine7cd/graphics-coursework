@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" onKeyPressed="#handleOnKeyPressed" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <right>
+      <VBox prefHeight="681.0" prefWidth="153.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="40.0" prefWidth="110.0" spacing="4.0">
+               <children>
+                  <Button fx:id="b_a" mnemonicParsing="false" onAction="#executeLetterA" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="А" textFill="WHITE" />
+                  <Button fx:id="b_b" mnemonicParsing="false" onAction="#executeLetterB" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Б" textFill="WHITE" />
+                  <Button fx:id="b_v" mnemonicParsing="false" onAction="#executeLetterV" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="В" textFill="WHITE" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="6.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="110.0" spacing="4.0">
+               <children>
+                  <Button fx:id="b_g" mnemonicParsing="false" onAction="#executeLetterG" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Г" textFill="WHITE" />
+                  <Button fx:id="b_d" mnemonicParsing="false" onAction="#executeLetterD" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Д" textFill="WHITE" />
+                  <Button fx:id="b_e" mnemonicParsing="false" onAction="#executeLetterE" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Е" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="6.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="110.0" spacing="4.0">
+               <children>
+                  <Button fx:id="b_yo" mnemonicParsing="false" onAction="#executeLetterYo" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Ё" textFill="WHITE" />
+                  <Button fx:id="b_j" mnemonicParsing="false" onAction="#executeLetterJ" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Ж" textFill="WHITE" />
+                  <Button fx:id="b_z" mnemonicParsing="false" onAction="#executeLetterZ" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="З" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="6.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="110.0" spacing="4.0">
+               <children>
+                  <Button fx:id="b_i" mnemonicParsing="false" onAction="#executeLetterI" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="И" textFill="WHITE" />
+                  <Button fx:id="b_i_" mnemonicParsing="false" onAction="#executeLetterI_" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Й" textFill="WHITE" />
+                  <Button fx:id="b_k" mnemonicParsing="false" onAction="#executeLetterK" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="К" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="6.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="110.0" spacing="4.0">
+               <children>
+                  <Button fx:id="b_l" mnemonicParsing="false" onAction="#executeLetterL" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Л" textFill="WHITE" />
+                  <Button fx:id="b_m" mnemonicParsing="false" onAction="#executeLetterM" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="М" textFill="WHITE" />
+                  <Button fx:id="b_n" mnemonicParsing="false" onAction="#executeLetterN" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Н" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="6.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="110.0" spacing="4.0">
+               <children>
+                  <Button fx:id="b_o" mnemonicParsing="false" onAction="#executeLetterO" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="О" textFill="WHITE" />
+                  <Button fx:id="b_p" mnemonicParsing="false" onAction="#executeLetterP" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="П" textFill="WHITE" />
+                  <Button fx:id="b_r" mnemonicParsing="false" onAction="#executeLetterR" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Р" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="6.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="110.0" spacing="4.0">
+               <children>
+                  <Button fx:id="b_s" mnemonicParsing="false" onAction="#executeLetterS" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="С" textFill="WHITE" />
+                  <Button fx:id="b_t" mnemonicParsing="false" onAction="#executeLetterT" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Т" textFill="WHITE" />
+                  <Button fx:id="b_u" mnemonicParsing="false" onAction="#executeLetterU" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="У" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="6.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="110.0" spacing="4.0">
+               <children>
+                  <Button fx:id="b_f" mnemonicParsing="false" onAction="#executeLetterF" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Ф" textFill="WHITE" />
+                  <Button fx:id="b_h" mnemonicParsing="false" onAction="#executeLetterH" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Х" textFill="WHITE" />
+                  <Button fx:id="b_c" mnemonicParsing="false" onAction="#executeLetterC" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Ц" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="6.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="110.0" spacing="4.0">
+               <children>
+                  <Button fx:id="b_ch" mnemonicParsing="false" onAction="#executeLetterCh" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Ч" textFill="WHITE" />
+                  <Button fx:id="b_sh" mnemonicParsing="false" onAction="#executeLetterSh" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Ш" textFill="WHITE" />
+                  <Button fx:id="b_sch" mnemonicParsing="false" onAction="#executeLetterSch" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Щ" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="6.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="110.0" spacing="4.0">
+               <children>
+                  <Button fx:id="b_tz" mnemonicParsing="false" onAction="#executeLetterTZ" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Ъ" textFill="WHITE" />
+                  <Button fx:id="b_ii" mnemonicParsing="false" onAction="#executeLetterII" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Ы" textFill="WHITE" />
+                  <Button fx:id="b_mz" mnemonicParsing="false" onAction="#executeLetterMZ" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Ь" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="6.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="40.0" prefWidth="110.0" spacing="4.0">
+               <children>
+                  <Button fx:id="b_ee" mnemonicParsing="false" onAction="#executeLetterEE" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Э" textFill="WHITE" />
+                  <Button fx:id="b_yu" mnemonicParsing="false" onAction="#executeLetterYu" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Ю" textFill="WHITE" />
+                  <Button fx:id="b_ya" mnemonicParsing="false" onAction="#executeLetterYa" prefWidth="33.0" style="-fx-background-color: #3e3e3e;" text="Я" textFill="WHITE" />
+               </children>
+               <padding>
+                  <Insets left="6.0" top="5.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets top="100.0" />
+         </padding>
+      </VBox>
+   </right>
+   <bottom>
+      <VBox prefHeight="92.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="1000.0">
+               <children>
+                  <TextField fx:id="sentence" onMouseClicked="#cleanupTextField" prefHeight="30.0" prefWidth="401.0" text="Введите текст, который хотите анимировать">
+                     <HBox.margin>
+                        <Insets left="30.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial Italic" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="animate" mnemonicParsing="false" onAction="#executeAnimation" prefHeight="27.0" prefWidth="180.0" style="-fx-background-color: #3e3e3e;" text="Анимировать" textFill="WHITE" textOverrun="CLIP">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Slider fx:id="slider" blockIncrement="1.0" majorTickUnit="0.5" max="4.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#sliderChanged" prefHeight="0.0" prefWidth="432.0" showTickLabels="true" showTickMarks="true" style="-fx-background-color: #c8c8c8;" value="1.0">
+                           <padding>
+                              <Insets bottom="10.0" left="30.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </Slider>
+                        <Label text="Скорость анимации" textFill="#544242">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                           <padding>
+                              <Insets left="110.0" top="15.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Button fx:id="pause" mnemonicParsing="false" onAction="#stopAnimation" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #3c3c3c;" text="Пауза" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                     <Button fx:id="resume" mnemonicParsing="false" onAction="#continueAnimation" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: #3c3c3c;" text="Продолжить" textFill="WHITE">
+                        <font>
+                           <Font size="12.0" />
+                        </font>
+                        <HBox.margin>
+                           <Insets left="10.0" />
+                        </HBox.margin>
+                     </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+      <center>
+         <Canvas fx:id="canvas" height="600.0" width="800.0" BorderPane.alignment="CENTER" />
+      </center>
+</BorderPane>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   
+</GridPane>
